@@ -1,0 +1,373 @@
+$date
+	Fri Nov 27 12:31:36 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module microc_tb $end
+$var wire 1 ! test_z $end
+$var wire 6 " test_opcode [5:0] $end
+$var reg 1 # t_s_inc $end
+$var reg 1 $ test_clk $end
+$var reg 3 % test_op [2:0] $end
+$var reg 1 & test_reset $end
+$var reg 1 ' test_s_inm $end
+$var reg 1 ( test_sabs $end
+$var reg 1 ) test_we3 $end
+$var reg 1 * test_wez $end
+$scope module mic $end
+$var wire 1 $ clk $end
+$var wire 3 + op [2:0] $end
+$var wire 1 & reset $end
+$var wire 1 ( s_abs $end
+$var wire 1 # s_inc $end
+$var wire 1 ' s_inm $end
+$var wire 1 ) we3 $end
+$var wire 1 * wez $end
+$var wire 1 , zalu $end
+$var wire 1 ! z $end
+$var wire 8 - wd3 [7:0] $end
+$var wire 10 . sal_sum [9:0] $end
+$var wire 8 / sal_rd2 [7:0] $end
+$var wire 8 0 sal_rd1 [7:0] $end
+$var wire 10 1 sal_pc [9:0] $end
+$var wire 10 2 sal_mux_sum [9:0] $end
+$var wire 10 3 sal_mux_s [9:0] $end
+$var wire 16 4 sal_mp [15:0] $end
+$var wire 8 5 sal_alu [7:0] $end
+$var wire 6 6 opcode [5:0] $end
+$scope module alum $end
+$var wire 3 7 op [2:0] $end
+$var wire 8 8 y [7:0] $end
+$var wire 1 , zero $end
+$var wire 8 9 b [7:0] $end
+$var wire 8 : a [7:0] $end
+$var reg 8 ; s [7:0] $end
+$upscope $end
+$scope module b_registro $end
+$var wire 1 $ clk $end
+$var wire 4 < ra1 [3:0] $end
+$var wire 4 = ra2 [3:0] $end
+$var wire 4 > wa3 [3:0] $end
+$var wire 1 ) we3 $end
+$var wire 8 ? wd3 [7:0] $end
+$var wire 8 @ rd2 [7:0] $end
+$var wire 8 A rd1 [7:0] $end
+$upscope $end
+$scope module ffz $end
+$var wire 1 * carga $end
+$var wire 1 $ clk $end
+$var wire 1 , d $end
+$var wire 1 & reset $end
+$var reg 1 ! q $end
+$upscope $end
+$scope module memoriap $end
+$var wire 1 $ clk $end
+$var wire 16 B rd [15:0] $end
+$var wire 10 C a [9:0] $end
+$upscope $end
+$scope module mux1 $end
+$var wire 8 D d0 [7:0] $end
+$var wire 8 E d1 [7:0] $end
+$var wire 1 ' s $end
+$var wire 8 F y [7:0] $end
+$upscope $end
+$scope module mux_pc $end
+$var wire 10 G d1 [9:0] $end
+$var wire 1 ( s $end
+$var wire 10 H y [9:0] $end
+$var wire 10 I d0 [9:0] $end
+$upscope $end
+$scope module mux_sum $end
+$var wire 10 J d0 [9:0] $end
+$var wire 10 K d1 [9:0] $end
+$var wire 1 # s $end
+$var wire 10 L y [9:0] $end
+$upscope $end
+$scope module pgc $end
+$var wire 1 $ clk $end
+$var wire 10 M d [9:0] $end
+$var wire 1 & reset $end
+$var reg 10 N q [9:0] $end
+$upscope $end
+$scope module sumador $end
+$var wire 10 O a [9:0] $end
+$var wire 10 P b [9:0] $end
+$var wire 10 Q y [9:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx Q
+b0x0001 P
+b0 O
+b0 N
+bx M
+b0x0001 L
+b1 K
+b10001 J
+bx I
+bx H
+b10001 G
+bx F
+bx E
+b1 D
+b0 C
+b10001 B
+b0 A
+b0 @
+bx ?
+b1 >
+b1 =
+b0 <
+bx ;
+b0 :
+b0 9
+bx 8
+bx 7
+b0 6
+bx 5
+b10001 4
+bx 3
+b0x0001 2
+b0 1
+b0 0
+b0 /
+bx .
+bx -
+x,
+bx +
+x*
+x)
+x(
+x'
+1&
+bx %
+1$
+x#
+b0 "
+0!
+$end
+#500
+0&
+#1000
+1,
+b0 -
+b0 ?
+b0 F
+b1 3
+b1 H
+b1 M
+b0 5
+b0 8
+b0 ;
+b0 E
+b1 .
+b1 I
+b1 Q
+b1 2
+b1 L
+b1 P
+b0 %
+b0 +
+b0 7
+1*
+1)
+1'
+1#
+0(
+0$
+#2000
+b10 3
+b10 H
+b10 M
+b10 D
+b10 >
+b10 =
+b100010 G
+b100010 J
+1!
+b10 .
+b10 I
+b10 Q
+b100010 4
+b100010 B
+b1 1
+b1 C
+b1 N
+b1 O
+1$
+#3000
+0$
+#4000
+b11 3
+b11 H
+b11 M
+b0 D
+b11 >
+b0 =
+b11 G
+b11 J
+b11 .
+b11 I
+b11 Q
+b11 4
+b11 B
+b10 1
+b10 C
+b10 N
+b10 O
+1$
+#5000
+0$
+#6000
+b100 3
+b100 H
+b100 M
+b10 >
+b10 G
+b10 J
+b100 .
+b100 I
+b100 Q
+b10 4
+b10 B
+b11 1
+b11 C
+b11 N
+b11 O
+1$
+#7000
+b101 3
+b101 H
+b101 M
+b101 .
+b101 I
+b101 Q
+b10 2
+b10 L
+b10 P
+0$
+0'
+0#
+#8000
+b100001 -
+b100001 ?
+b100001 F
+b1000010010 2
+b1000010010 L
+b1000010010 P
+b1000010111 3
+b1000010111 H
+b1000010111 M
+b100001 D
+b1 =
+b10 <
+b1000010010 G
+b1000010010 J
+b1000010111 .
+b1000010111 I
+b1000010111 Q
+b1000010010 4
+b1000010010 B
+b101 1
+b101 C
+b101 N
+b101 O
+1$
+#9000
+b0 -
+b0 ?
+b0 F
+0$
+b10 %
+b10 +
+b10 7
+0)
+1'
+#10000
+b0 2
+b0 L
+b0 P
+b1000010111 3
+b1000010111 H
+b1000010111 M
+b0 D
+b0 >
+b0 =
+b0 <
+b0 G
+b0 J
+b1000010111 .
+b1000010111 I
+b1000010111 Q
+b0 4
+b0 B
+b1000010111 1
+b1000010111 C
+b1000010111 N
+b1000010111 O
+1$
+#11000
+0$
+b11 %
+b11 +
+b11 7
+#12000
+1$
+#13000
+b1000011000 3
+b1000011000 H
+b1000011000 M
+b1000011000 .
+b1000011000 I
+b1000011000 Q
+b1 2
+b1 L
+b1 P
+0$
+b0 %
+b0 +
+b0 7
+1)
+0'
+1#
+#14000
+b1000011001 3
+b1000011001 H
+b1000011001 M
+b1000011001 .
+b1000011001 I
+b1000011001 Q
+b1000011000 1
+b1000011000 C
+b1000011000 N
+b1000011000 O
+1$
+#15000
+b1000011000 3
+b1000011000 H
+b1000011000 M
+b1000011000 .
+b1000011000 I
+b1000011000 Q
+b0 2
+b0 L
+b0 P
+0$
+0#
+#16000
+1$
+#17000
+0$
+#18000
+1$
+#19000
+0$
+#20000
+1$
